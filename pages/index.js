@@ -19,6 +19,7 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Head>
         <title>Chris's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <header className={styles.hero}>
