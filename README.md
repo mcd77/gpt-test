@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Build and Export
 
-Build the project and export static files:
+Global styles live in `styles/globals.css`. The site uses a dark theme and includes a responsive navigation bar that collapses into a menu button on small screens. Modify these styles or the components in `components/` to further personalize the blog.
 
 ```bash
 npm run build

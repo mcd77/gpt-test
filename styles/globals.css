@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 .container {
@@ -12,8 +14,47 @@ body {
 }
 
 header {
-  text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
 
 footer {
@@ -33,7 +74,7 @@ li {
 }
 
 a {
-  color: #0070f3;
+  color: #66aaff;
   text-decoration: none;
 }
 
