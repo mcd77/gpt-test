@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
             <div key={id} className={styles.postCard}>
               <Link href={`/${id}`}>
                 <Image
-                  src={`/images/${id}.jpg`}
+                  src={`/gpt-test/images/${id}.jpg`}
                   alt={title}
                   width={600}
                   height={350}
