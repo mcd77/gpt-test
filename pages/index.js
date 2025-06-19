@@ -24,7 +24,19 @@ export default function Home({ allPostsData }) {
       <header className={styles.hero}>
         <div className={styles.overlay}>
           <h1>Welcome to Chris's Blog</h1>
-          <p>Research, projects, and thoughts</p>
+          <section className="blog-intro">
+            <h2>Research, projects, and thoughts</h2>
+            <p>
+              This blog is a living journal where I explore new ideas, share technical deep dives,
+              document personal projects, and reflect on the process of building and learning.
+              Whether it’s experimenting with cutting-edge tools, solving real-world problems,
+              or just trying to make sense of a complex concept, I aim to capture the journey
+              with clarity and curiosity.
+            </p>
+            <p>
+              If you’re into code, creativity, and continuous learning — welcome. You’re in good company.
+            </p>
+          </section>
         </div>
       </header>
 
