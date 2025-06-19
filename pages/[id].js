@@ -30,7 +30,8 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <h1>{postData.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}>
+        </div>
       </article>
     </Layout>
 
