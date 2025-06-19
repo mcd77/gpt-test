@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Layout from './components/layout';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import styles from '../styles/Home.module.css';
@@ -15,6 +16,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
+
 
       <h1>Welcome to my Next.js Blog</h1>
       <ul className={styles.postList}>
