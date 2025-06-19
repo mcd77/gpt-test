@@ -24,16 +24,9 @@ export default function Home({ allPostsData }) {
       <header className={styles.hero}>
         <div className={styles.overlay}>
           <h1>Welcome to Chris's Blog</h1>
-          <p>Research, projects, and thoughts—coded and documented with care.</p>
+          <p>Research, projects, and thoughts</p>
         </div>
       </header>
-
-      <nav className={styles.navbar}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
 
       <main className={styles.main}>
         <h2 className={styles.sectionTitle}>Latest Posts</h2>
