@@ -31,6 +31,13 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <h1>{postData.title}</h1>
+          <Image
+           src={`/gpt-test/images/${postData.id}.jpg`}
+           alt={title}
+           width={600}
+           height={350}
+           className={styles.postImage}
+           />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
