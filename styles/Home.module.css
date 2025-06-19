@@ -4,6 +4,21 @@
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+.blog-intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #ddd;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.blog-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
 
 .tagline {
   text-align: center;
