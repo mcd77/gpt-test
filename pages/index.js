@@ -52,6 +52,7 @@ export default function Home({ allPostsData }) {
                   width={600}
                   height={350}
                   className={styles.postImage}
+                  style={{ width: '100%', height: 'auto' }} 
                 />
               </Link>
               <div className={styles.postContent}>
