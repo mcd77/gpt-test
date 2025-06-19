@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
       <header className={styles.textSection}>
         <div className={styles.overlay}>
           <section className={styles.blogIntro}>
-            <h2 className={styles.glitchText} data-text="Research, projects, and thoughts">Research, projects, and thoughts</h2>
+            <h2 className={styles.glitch} data-text="Research, projects, and thoughts">Research, projects, and thoughts</h2>
             <p className={styles.introParagraph} >
               This blog is a living journal where I explore new ideas, share technical deep dives,
               document personal projects, and reflect on the process of building and learning.
