@@ -1,3 +1,101 @@
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('/header.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.main {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.postCard {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.postCard:hover {
+  transform: translateY(-5px);
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.postContent {
+  padding: 1rem;
+}
+
+.postContent h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.postContent h3 a:hover {
+  text-decoration: underline;
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.postDescription {
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
