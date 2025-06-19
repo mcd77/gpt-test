@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
                   <Link href={`/${id}`}>{title}</Link>
                 </h3>
                 <p className={styles.postDate}>{date}</p>
-                <p className={styles.postDescription}>{description}</p>
+                <p className={styles.introParagraph}>{description}</p>
               </div>
             </div>
           ))}
