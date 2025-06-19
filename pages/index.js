@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import styles from '../styles/Home.module.css';
 
