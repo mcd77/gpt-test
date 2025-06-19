@@ -15,6 +15,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
+    <div>
     <Layout>
       <ul className={styles.postList}>
     <div>
