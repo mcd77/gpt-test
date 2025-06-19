@@ -5,6 +5,80 @@
   margin-bottom: 1rem;
 }
 
+.glitchText {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: glitch-flicker 2.5s infinite;
+}
+
+/* ::before and ::after layers for RGB offset */
+.glitchText::before,
+.glitchText::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  z-index: -1;
+}
+
+.glitchText::before {
+  color: #f0f;
+  animation: glitch-offset 2.5s infinite ease-in-out;
+}
+
+.glitchText::after {
+  color: #0ff;
+  animation: glitch-offset 2.5s infinite ease-in-out reverse;
+}
+
+/* Keyframes */
+@keyframes glitch-offset {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0);
+  }
+  10% {
+    clip-path: inset(10% 0 85% 0);
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    clip-path: inset(85% 0 10% 0);
+    transform: translate(2px, 2px);
+  }
+  30% {
+    clip-path: inset(40% 0 50% 0);
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  55% {
+    opacity: 0.95;
+  }
+  60% {
+    opacity: 0.85;
+  }
+}
 
 .blogIntro {
   padding: 2rem;
