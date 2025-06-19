@@ -3,10 +3,17 @@ const Link = require('next/link');
 const { useState } = require('react');
 
 function Layout({ children }) {
+import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
+
+export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen((v) => !v);
 
+
+export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
@@ -24,6 +31,8 @@ function Layout({ children }) {
             </li>
           </ul>
         </nav>
+
+        <h1>My Blog</h1>
       </header>
       <main>{children}</main>
       <footer>&copy; 2025 My Blog</footer>
@@ -32,3 +41,4 @@ function Layout({ children }) {
 }
 
 module.exports = Layout;
+
