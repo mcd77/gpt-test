@@ -1,1 +1,33 @@
 # gpt-test
+
+This repository contains a minimal Next.js blog configured for deployment to GitHub Pages.
+
+## Getting Started
+
+Install dependencies (requires internet access):
+
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build and Export
+
+Build the project and export static files:
+
+```bash
+npm run build
+```
+
+The static site will be generated in the `out/` directory. Deploy the contents of this directory to the `gh-pages` branch or a folder configured for GitHub Pages.
+
+The `next.config.js` file sets `basePath` and `assetPrefix` for production so that the site works when served from the `/gpt-test` subpath on GitHub Pages.
