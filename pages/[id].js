@@ -36,6 +36,7 @@ export default function Post({ postData }) {
            width={600}
            height={350}
            className={styles.postImage}
+           style={{ width: '100%', height: 'auto' }} 
            />
         <h1>{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
