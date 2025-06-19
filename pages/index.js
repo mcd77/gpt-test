@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
   return (
     <div>
     <Layout>
-      <ul className={styles.postList}>
+      <ul className={styles.postList}></ul>
     <div>
       <h1>Welcome to my Next.js Blog</h1>
       <ul>
