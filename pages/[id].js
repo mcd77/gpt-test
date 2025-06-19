@@ -30,7 +30,6 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1>{postData.title}</h1>
           <Image
            src={`/gpt-test/images/${postData.id}.jpg`}
            alt={postData.title}
@@ -38,6 +37,7 @@ export default function Post({ postData }) {
            height={350}
            className={styles.postImage}
            />
+        <h1>{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
