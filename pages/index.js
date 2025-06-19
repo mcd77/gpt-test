@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>Chris's Blog</title>
+        <title className="glitchText" data-text="Chris's Blog">Chris's Blog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
