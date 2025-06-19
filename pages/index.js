@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import Layout from './components/layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import Layout from '../components/Layout';
 import { getSortedPostsData } from '../lib/posts';
 import styles from '../styles/Home.module.css';
 
@@ -15,33 +17,49 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <img src="/header.svg" alt="Chris" className={styles.headerImage} />
-      <p className={styles.tagline}>
-        This is Chris's blog and will document my research and projects.
-      </p>
-      <div className={styles.postGrid}>
-        {allPostsData.map(({ id, title, date, description }) => (
-          <div key={id} className={styles.postCard}>
-            <h2>
-              <Link href={`/${id}`}>{title}</Link>
-            </h2>
-            <p>{description}</p>
-            <p>
-              <small>{date}</small>
-            </p>
-          </div>
-        ))}
-      </div>
+      <Head>
+        <title>Chris's Blog</title>
+      </Head>
 
+      <header className={styles.hero}>
+        <div className={styles.overlay}>
+          <h1>Welcome to Chris's Blog</h1>
+          <p>Research, projects, and thoughts—coded and documented with care.</p>
+        </div>
+      </header>
 
-      <h1>Welcome to my Next.js Blog</h1>
-      <ul className={styles.postList}>
-        {allPostsData.map(({ id, title, date }) => (
-          <li key={id}>
-            <Link href={`/${id}`}>{title}</Link> ({date})
-          </li>
-        ))}
-      </ul>
+      <nav className={styles.navbar}>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/contact">Contact</Link>
+      </nav>
+
+      <main className={styles.main}>
+        <h2 className={styles.sectionTitle}>Latest Posts</h2>
+        <div className={styles.postGrid}>
+          {allPostsData.map(({ id, title, date, description }) => (
+            <div key={id} className={styles.postCard}>
+              <Link href={`/${id}`}>
+                <Image
+                  src={`/images/${id}.jpg`}
+                  alt={title}
+                  width={600}
+                  height={350}
+                  className={styles.postImage}
+                />
+              </Link>
+              <div className={styles.postContent}>
+                <h3>
+                  <Link href={`/${id}`}>{title}</Link>
+                </h3>
+                <p className={styles.postDate}>{date}</p>
+                <p className={styles.postDescription}>{description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
     </Layout>
   );
 }
