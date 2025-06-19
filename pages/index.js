@@ -23,7 +23,6 @@ export default function Home({ allPostsData }) {
 
       <header className={styles.hero}>
         <div className={styles.overlay}>
-          <h1>Welcome to Chris's Blog</h1>
           <section className="blog-intro">
             <h2>Research, projects, and thoughts</h2>
             <p>
