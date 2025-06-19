@@ -32,6 +32,16 @@ export default function Home({ allPostsData }) {
           </div>
         ))}
       </div>
+
+
+      <h1>Welcome to my Next.js Blog</h1>
+      <ul className={styles.postList}>
+        {allPostsData.map(({ id, title, date }) => (
+          <li key={id}>
+            <Link href={`/${id}`}>{title}</Link> ({date})
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 }

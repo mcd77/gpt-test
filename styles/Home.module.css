@@ -36,3 +36,6 @@
 .postCard p {
   margin-bottom: 0;
 }
+.postList a {
+  font-weight: bold;
+}
