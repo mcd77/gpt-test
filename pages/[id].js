@@ -33,7 +33,7 @@ export default function Post({ postData }) {
         <h1>{postData.title}</h1>
           <Image
            src={`/gpt-test/images/${postData.id}.jpg`}
-           alt={title}
+           alt={postData.title}
            width={600}
            height={350}
            className={styles.postImage}
