@@ -15,14 +15,8 @@ function Layout({ children }) {
       <header>
         <nav className="navbar">
           <h1 className="site-title">
-            <Link href="/">My Blog</Link>
+            <Link href="/">Home</Link>
           </h1>
-          <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-          <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-          </ul>
         </nav>
       </header>
       <main>{children}</main>
