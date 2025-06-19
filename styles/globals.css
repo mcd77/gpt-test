@@ -55,6 +55,8 @@ header {
   .menu-toggle {
     display: block;
   }
+  text-align: center;
+  margin: 2rem 0;
 }
 
 footer {
@@ -75,6 +77,7 @@ li {
 
 a {
   color: #66aaff;
+  color: #0070f3;
   text-decoration: none;
 }
 

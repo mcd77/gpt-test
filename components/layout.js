@@ -7,6 +7,8 @@ export default function Layout({ children }) {
 
   const toggleMenu = () => setMenuOpen((v) => !v);
 
+
+export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
@@ -24,6 +26,7 @@ export default function Layout({ children }) {
             </li>
           </ul>
         </nav>
+        <h1>My Blog</h1>
       </header>
       <main>{children}</main>
       <footer>&copy; 2025 My Blog</footer>
