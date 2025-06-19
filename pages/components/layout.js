@@ -15,7 +15,7 @@ function Layout({ children }) {
       <header>
         <nav className="navbar">
           <h1 className="site-title">
-            <Link href="/">Home</Link>
+            <Link href="/">Chris's Blog</Link>
           </h1>
         </nav>
       </header>
