@@ -1,6 +1,6 @@
 # gpt-test
 
-This repository contains a minimal Next.js blog configured for deployment to GitHub Pages.
+This repository contains a minimal but professional-looking Next.js blog configured for deployment to GitHub Pages.
 
 ## Getting Started
 
@@ -46,3 +46,7 @@ Hello world!
 ```
 
 Run `npm run build` to generate static pages for each post. Deploy the `out/` directory to GitHub Pages.
+
+## Customizing the Look
+
+Global styles live in `styles/globals.css`. The layout is responsive with a centered container and basic typography. Modify these styles or the components in `components/` to further personalize the blog.

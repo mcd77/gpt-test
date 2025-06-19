@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
+import styles from '../styles/Home.module.css';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -12,15 +14,14 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <div>
-      <h1>Welcome to my Next.js Blog</h1>
-      <ul>
+    <Layout>
+      <ul className={styles.postList}>
         {allPostsData.map(({ id, title, date }) => (
           <li key={id}>
             <Link href={`/${id}`}>{title}</Link> ({date})
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 }
