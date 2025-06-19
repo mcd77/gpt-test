@@ -2,6 +2,7 @@
 
 This repository contains a minimal but professional-looking Next.js blog configured for deployment to GitHub Pages.
 
+
 This repository contains a minimal Next.js blog configured for deployment to GitHub Pages.
 
 ## Getting Started
@@ -52,4 +53,5 @@ Run `npm run build` to generate static pages for each post. Deploy the `out/` di
 ## Customizing the Look
 
 Global styles live in `styles/globals.css`. The site uses a dark theme and includes a responsive navigation bar that collapses into a menu button on small screens. Modify these styles or the components in `components/` to further personalize the blog.
+
 Global styles live in `styles/globals.css`. The layout is responsive with a centered container and basic typography. Modify these styles or the components in `components/` to further personalize the blog.

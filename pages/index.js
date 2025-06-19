@@ -15,6 +15,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
+
       <h1>Welcome to my Next.js Blog</h1>
       <ul className={styles.postList}>
         {allPostsData.map(({ id, title, date }) => (
