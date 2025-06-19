@@ -27,6 +27,7 @@ export default function Home({ allPostsData }) {
           </li>
         ))}
       </ul>
+    </div>
     </Layout>
     </div>
   );
