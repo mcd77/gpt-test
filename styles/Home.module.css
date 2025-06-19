@@ -4,6 +4,19 @@
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+
+.main {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  padding: 1.2rem;
+}
+
 .blog-intro {
   max-width: 800px;
   margin: 2rem auto;
