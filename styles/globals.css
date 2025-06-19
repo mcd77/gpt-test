@@ -9,7 +9,39 @@
   justify-content: center;
   color: white;
 }
+.textSection {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ddd;
+  font-family: 'Inter', sans-serif;
+}
 
+.mainHeader {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.introParagraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .mainHeader {
+    font-size: 1.8rem;
+  }
+
+  .introParagraph {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
