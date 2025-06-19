@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
         <div className={styles.overlay}>
           <section className="blog-intro">
             <h2 className={styles.mainHeader}>Research, projects, and thoughts</h2>
-            <p className={styles.introParagraph}>
+            <p className={styles.introParagraph} >
               This blog is a living journal where I explore new ideas, share technical deep dives,
               document personal projects, and reflect on the process of building and learning.
               Whether it’s experimenting with cutting-edge tools, solving real-world problems,
