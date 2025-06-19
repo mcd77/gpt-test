@@ -31,3 +31,18 @@ npm run build
 The static site will be generated in the `out/` directory. Deploy the contents of this directory to the `gh-pages` branch or a folder configured for GitHub Pages.
 
 The `next.config.js` file sets `basePath` and `assetPrefix` for production so that the site works when served from the `/gpt-test` subpath on GitHub Pages.
+
+## Adding Posts
+
+Add Markdown files to the `posts/` directory. Each file should begin with YAML front matter containing `title` and `date` fields. For example:
+
+```markdown
+---
+title: "My First Post"
+date: "2025-06-20"
+---
+
+Hello world!
+```
+
+Run `npm run build` to generate static pages for each post. Deploy the `out/` directory to GitHub Pages.
