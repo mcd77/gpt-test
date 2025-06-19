@@ -4,7 +4,7 @@ date: "2025-06-19"
 description: "How Codex generated a Next.js blog and deployed it to GitHub Pages."
 ---
 
-This blog was created entirely with Codex, OpenAI's code generation tool. Using Codex, all pages, components, and configuration were produced automatically — no manual coding required.
+This blog was created entirely with Codex, OpenAI's code generation tool. Using Codex, all pages, components, and configuration were produced automatically with no manual coding required.
 
 I started by prompting Codex to scaffold a simple Next.js blog. Within seconds, it generated the essential files: the layout components, dynamic routes for blog posts, and even the getStaticProps and getStaticPaths functions for static generation. Styling? Done. Routing? Handled. It was like pair programming with an assistant who doesn’t need to sleep.
 
