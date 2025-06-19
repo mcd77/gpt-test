@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
 
       <header className={styles.textSection}>
         <div className={styles.overlay}>
-          <section className="blog-intro">
+          <section className={styles.blogIntro}>
             <h2 className={styles.mainHeader}>Research, projects, and thoughts</h2>
             <p className={styles.introParagraph} >
               This blog is a living journal where I explore new ideas, share technical deep dives,
