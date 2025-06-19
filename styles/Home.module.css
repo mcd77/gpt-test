@@ -1,0 +1,38 @@
+.headerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.postGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.postCard {
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+}
+
+.postCard h2 {
+  margin-top: 0;
+}
+
+.postCard a {
+  color: #66aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.postCard p {
+  margin-bottom: 0;
+}
