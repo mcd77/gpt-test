@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
-const repo = 'gpt-test';
+const repo = '';
 
 module.exports = {
   output: 'export',
