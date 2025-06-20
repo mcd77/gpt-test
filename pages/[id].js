@@ -31,7 +31,7 @@ export default function Post({ postData }) {
       </Head>
       <article>
           <Image
-           src={`/gpt-test/images/${postData.id}.jpg`}
+           src={`/images/${postData.id}.jpg`}
            alt={postData.title}
            width={600}
            height={350}
