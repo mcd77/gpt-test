@@ -4,6 +4,6 @@ const repo = 'gpt-test';
 module.exports = {
   output: 'export',
   basePath: isProd ? `/` : '',
-  assetPrefix: isProd ? `/${repo}/` : '',
+  assetPrefix: isProd ? `/` : '',
   trailingSlash: true,
 };
