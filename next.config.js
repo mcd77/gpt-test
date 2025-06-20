@@ -1,9 +1,9 @@
 const isProd = process.env.NODE_ENV === 'production';
-const repo = '';
+const repo = 'gpt-test';
 
 module.exports = {
   output: 'export',
-  basePath: isProd ? `/${repo}` : '',
+  basePath: isProd ? `/` : '',
   assetPrefix: isProd ? `/${repo}/` : '',
   trailingSlash: true,
 };
